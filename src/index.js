@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const name = "Markus Heinilä";
+const first_page = 2023;
+
+const demo = <div>
+  <h1>Hello world, {name}</h1>
+  <p>My first page was {2023 - first_page} years ago</p>
+</div>
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    {demo}
   </React.StrictMode>
 );
 
